@@ -1,0 +1,46 @@
+.cate-header{
+    margin-left: 40%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+  }
+  td{
+    text-align: center;
+   
+  }
+  table{
+      margin-left: 20%;
+      width: 70%;
+  }
+
+.main{
+    display: flex;
+}
+.right{
+    flex-direction: row;
+    margin-left: 9%;
+    /* border: 1px solid black; */
+    /* height: 20%; */
+    width: 80%;
+}
+.left{
+    margin-left: -30%;
+    /* border: 1px solid red; */
+}
+.result{
+    margin-left: 5%;
+    color: rgb(8, 31, 233);
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttons{
+    background-color:  rgb(21, 119, 247);
+    position:fixed;
+    color: black;
+  }

@@ -1,0 +1,34 @@
+<br>
+<br>
+<br><br><br>
+<h1 class="expense-header">your Expense</h1><br>
+<div class="main">
+Enter your expense name : <input placeholder="expense name" [(ngModel)]="uexpense"><br><br>
+<!-- Enter your amount: <input placeholder="amount" [(ngModel)]="uamount"><br><br> -->
+<button (click)="add()">ADD</button> <button (click)="refresh()" class="refresh">DELETE ALL</button><br><br>
+<table >
+    <tr>
+        <th>S.NO</th>
+        <th>EXPENSE</th>
+        <!-- <th>AMOUNT</th> -->
+    </tr>
+    <tr *ngFor="let q of expenses;let i = index">
+        <td>{{i+1}}</td>
+        <td>{{q.expense}}</td>
+        <!-- <td>{{q.amount}}</td> -->
+        <td><button (click)="delete(i)">Delete</button></td> 
+    </tr>
+    <!-- <tr >
+        
+        <td colspan=2 class="total">TOTAL</td>
+        <td>{{sum}}</td>
+    </tr> -->
+</table>
+</div>
+<br>
+
+<div class="butt">
+    <button mat-button color="primary" class="btnback" routerLink="/income">Go Back</button> &nbsp; &nbsp; &nbsp;
+    <button mat-button color="primary" class="buttons" routerLink="/dummy">Next</button>
+</div>
+

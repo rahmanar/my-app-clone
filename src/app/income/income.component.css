@@ -1,0 +1,33 @@
+.income-header{
+    margin-left: 40%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+.main{
+  margin-left: 35%;
+}
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  text-align: center;
+}
+table{
+  width: 70%;
+}
+.refresh{
+  margin-left: 2%;
+}
+.total{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.buttons{
+  background-color:  rgb(21, 119, 247);
+  margin-left: 70%;
+  position:fixed;
+  color: black;
+}
