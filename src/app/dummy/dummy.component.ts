@@ -24,6 +24,7 @@ export class DummyComponent implements OnInit {
       this.dummy = JSON.parse(c)
     }
 
+    
    }
 
 list:any = [];
@@ -39,7 +40,7 @@ expene:any ;
 totalIncome:any;
 totalExpense:any;
 totalBalance:any;
-results:any =[];
+
 // l:any;u:any;d:any;
    incomeFunction(){
       this.incomee = true;
@@ -59,7 +60,7 @@ results:any =[];
        amount:this.uamt,
        incomee:false,
        expene:false,
-
+ 
      };
      this.dummy.push(f);
     //  console.log(this.dummy)
@@ -81,6 +82,7 @@ results:any =[];
      localStorage.setItem("a",this.totalIncome);
      localStorage.setItem("b",this.totalExpense);
      localStorage.setItem("c",this.totalBalance);
+
     //  this.l = localStorage.getItem("a");
     //  this.u=localStorage.getItem("b");
     //  this.d=localStorage.getItem("c");
@@ -113,6 +115,9 @@ results:any =[];
       document.location.reload();
     }, 100);
     window.localStorage.removeItem('dummy');
+    window.localStorage.removeItem('a');
+    window.localStorage.removeItem('b');
+    window.localStorage.removeItem('c');
   }
 
   ngOnInit(): void {

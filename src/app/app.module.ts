@@ -12,6 +12,7 @@ import { ReportComponent } from './report/report.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DummyComponent } from './dummy/dummy.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DummyComponent } from './dummy/dummy.component';
     IncomeComponent,
     ExpenseComponent,
     ReportComponent,
-    DummyComponent
+    DummyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

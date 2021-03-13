@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./report.component.css']
 })
 export class ReportComponent implements OnInit {
-
-  constructor() { }
+name:any;
+  constructor() { 
+    let a = localStorage.getItem('name');
+    this.name = a;
+  }
 
   ngOnInit(): void {
   }

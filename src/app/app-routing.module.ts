@@ -5,13 +5,15 @@ import { ExpenseComponent } from './expense/expense.component';
 import { ReportComponent } from './report/report.component';
 import { AppComponent } from './app.component';
 import { DummyComponent } from './dummy/dummy.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [ 
   {path:"income",component:IncomeComponent},
   {path:"expense",component:ExpenseComponent},
   {path:"report",component:ReportComponent},
-  {path:"",component:AppComponent},
+  {path:"app",component:AppComponent},
+  {path:"",component:HomeComponent},
   {path:"dummy",component:DummyComponent}
 ];
 
@@ -20,4 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const RoutingComponent = [IncomeComponent,ExpenseComponent,DummyComponent,ReportComponent,AppComponent] 
+export const RoutingComponent = [IncomeComponent,ExpenseComponent,DummyComponent,HomeComponent,ReportComponent,AppComponent] 

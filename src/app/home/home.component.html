@@ -1,0 +1,20 @@
+<br><br><br><br><br>
+<h2>{{names}}...Thank you for using my App</h2><br>
+<div class="main">
+    <div class="income">
+        <h1>your total INCOME is : {{incoma}}</h1>
+    </div><br><br>
+    <div class="expense">
+        <h1>your total EXPENSE is : {{expensovia}}</h1>
+    </div><br><br>
+    <div class="balance">
+        <h1>your total BALANCE is : {{balanceya}}</h1>
+    </div>
+</div>
+<br><br>
+
+<div class="butt">
+    <h3 class="nameHeading">Please..Enter your name : </h3> 
+    <input class="name" type="text" [(ngModel)]="uname"> &nbsp;&nbsp;
+    <button mat-button color="primary" class="buttons" routerLink="/income" (click)="name()">Let's Start New</button>
+</div>
