@@ -115,9 +115,6 @@ totalBalance:any;
       document.location.reload();
     }, 100);
     window.localStorage.removeItem('dummy');
-    window.localStorage.removeItem('a');
-    window.localStorage.removeItem('b');
-    window.localStorage.removeItem('c');
   }
 
   ngOnInit(): void {
